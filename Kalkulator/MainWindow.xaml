@@ -1,0 +1,49 @@
+﻿<Window x:Class="Kalkulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kalkulator"
+        mc:Ignorable="d"
+        KeyDown="Window_KeyDown"
+        Title="Kalkulator" Height="400" Width="300">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" VerticalAlignment="Center"  FontSize="25" VerticalContentAlignment="Center" TextAlignment="Right" Text="0" IsReadOnly="True" x:Name="wyswietlacz_tb" Height="62" />
+        <Button Grid.Row="1" Grid.Column="0"  Click="CE_clk" x:Name="CE_btn">CE</Button>
+        <Button Grid.Row="1" Grid.Column="1"  Click="C_clk" x:Name="C_btn">C</Button>
+        <Button Grid.Row="1" Grid.Column="2"  Click="back_clk" x:Name="back_btn">back</Button>
+        <Button Grid.Row="1" Grid.Column="3"  Click="dzielenie_clk" x:Name="dzielenie_btn">/</Button>
+        <Button Grid.Row="2" Grid.Column="0"  Click="p7_clk" x:Name="p7_btn">7</Button>
+        <Button Grid.Row="2" Grid.Column="1"  Click="p8_clk" x:Name="p8_btn">8</Button>
+        <Button Grid.Row="2" Grid.Column="2"  Click="p9_clk" x:Name="p9_btn">9</Button>
+        <Button Grid.Row="2" Grid.Column="3"  Click="mnozenie_clk" x:Name="mnozenie_btn">*</Button>
+        <Button Grid.Row="3" Grid.Column="0"  Click="p4_clk" x:Name="p4_btn">4</Button>
+        <Button Grid.Row="3" Grid.Column="1"  Click="p5_clk" x:Name="p5_btn">5</Button>
+        <Button Grid.Row="3" Grid.Column="2"  Click="p6_clk" x:Name="p6_btn">6</Button>
+        <Button Grid.Row="3" Grid.Column="3"  Click="odejmowanie_clk" x:Name="odejmowanie_btn">-</Button>
+        <Button Grid.Row="4" Grid.Column="0"  Click="p1_clk" x:Name="p1_btn">1</Button>
+        <Button Grid.Row="4" Grid.Column="1"  Click="p2_clk" x:Name="p2_btn">2</Button>
+        <Button Grid.Row="4" Grid.Column="2"  Click="p3_clk" x:Name="p3_btn">3</Button>
+        <Button Grid.Row="4" Grid.Column="3"  Click="dodawanie_clk" x:Name="dodawanie_btn">+</Button>
+        <Button Grid.Row="5" Grid.Column="0"  Click="znak_clk" x:Name="znak_btn">+/-</Button>
+        <Button Grid.Row="5" Grid.Column="1"  Click="p0_clk" x:Name="p0_btn">0</Button>
+        <Button Grid.Row="5" Grid.Column="2"  Click="przecinek_clk" x:Name="przecinek_btn">,</Button>
+        <Button Grid.Row="5" Grid.Column="3"  Click="wynik_clk" x:Name="wynik_btn">=</Button>
+    </Grid>
+</Window>
